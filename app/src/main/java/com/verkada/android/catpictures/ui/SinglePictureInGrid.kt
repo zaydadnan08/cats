@@ -4,6 +4,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.BlendMode
@@ -32,7 +33,7 @@ fun SinglePictureInGrid(
             .clickable { onClick(index) }
     ) {
         AsyncImage(
-            model = picture.urls.regular,
+            model = picture.url,
             contentScale = ContentScale.Crop,
             contentDescription = null,
             colorFilter = colorFilter,

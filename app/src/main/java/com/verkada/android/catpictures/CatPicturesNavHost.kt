@@ -13,20 +13,19 @@ import androidx.navigation.compose.composable
 @Composable
 fun CatPicturesNavHost(
     navController: NavHostController,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     NavHost(
         navController = navController,
         startDestination = Screens.Home.name,
         modifier = modifier
     ) {
-
         composable(route = Screens.Home.name) {
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier.fillMaxSize(),
             ) {
-                Text(text = "Home screen")
+                Text(text = "Home Screen")
             }
         }
 
